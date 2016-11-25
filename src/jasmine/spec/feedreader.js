@@ -71,10 +71,9 @@ $(function() {
       loadFeed(0, done);
     });
     
-    it('feeds load', function(done) {
+    it('feeds load', function() {
       var entries = $('.feed .entry');
       expect(entries.length).toBeGreaterThan(0);
-      done();
     });
   });
 
@@ -92,10 +91,9 @@ $(function() {
       });
     });
     
-    it('content changes', function(done) {
+    it('content changes', function() {
       var sample = $('.feed > .entry-link').attr('href');
       expect(sample).not.toEqual(this.oldSample);
-      done();
     });
   });
 }());
