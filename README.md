@@ -1,4 +1,4 @@
-## Neighborhood Map
+## Feedreader
 
 ### Building resources
 1. Download [cURL](https://curl.haxx.se/)
