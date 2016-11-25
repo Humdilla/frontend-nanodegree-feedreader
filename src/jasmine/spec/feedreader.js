@@ -88,7 +88,6 @@ $(function() {
       var self = this;
       loadFeed(0, function(){
         self.oldSample = $('.feed > .entry-link').attr('href');
-        console.log(self.oldSample);
         loadFeed(1, function(){
           done();
         });
