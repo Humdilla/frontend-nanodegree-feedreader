@@ -68,13 +68,11 @@ $(function() {
      * .entry element within the .feed container.
      */
     beforeEach(function(done){
-      loadFeed(0, function(){
-        done();
-      });
+      loadFeed(0, done);
     });
     
     it('feeds load', function(done) {
-      var entries = $('.feed > .entry-link');
+      var entries = $('.feed .entry');
       expect(entries.length).toBeGreaterThan(0);
       done();
     });
